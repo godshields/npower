@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a,li, p,ol, ul , h1, h2, h3, h4, h5{
+    font-family: 'poppins', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root{
+    --backgroundColor:#fff;
+    --navLink:rgba(0,0,0,.5);
+    --black:#000000;
+--lightRed:rgb(221, 65, 65);
+--teal:#dbf9ea;
+--green:#28a745;
+--button:#288855;
+--lightGray:#a9a9aa;
+}
+
+
+.header{
+    position: static;
+    width: 100%;
+background: var(--backgroundColor);
+}
+
+.headerWrapper{
+    width: 90%;
+    height: 100px;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin: auto;
+    background: var(--backgroundColor);
+}
+
+.logoImage{
+    width: 60px;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navgroup{
+    margin-left: 15px;
+}
+
+.nav-link{
+    color: var(--navLink);
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.nav-link:hover{
+    color:var(--black);
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+.Textheading{
+    margin-top: 20px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    color: #000000;
+    font-size: 30px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+
+.information{
+    width: 41%;
+    float: left;
+    background: var(--teal);
+}
+
+.infoWrapper{
+    width: 80%;
+    margin: auto;
+}
+
+.headingInfo{
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    line-height: 2;
+    font-weight: 500;
+    color:#288855;
+}
+
+ol {
+    margin-bottom: 20px;
+}
+
+ol > li{
+    list-style:decimal;
+    margin-top: 10px;
+    font-weight: 300;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.successInfo{
+    margin-bottom: 50px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.loginForm{
+    width: 42%;
+    margin-top: 100px;
+}
+
+.formWrapper{
+    width:60%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-group > input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border:1px solid var(--lightGray);
+    outline: none;
+    
+}
+
+
+.form-group > input::placeholder{
+    font-size: 15px;
+}
+
+.label{
+    display:flex;
+    justify-content: space-between;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox p{
+    font-size: 14px;
+    margin-left: 5px;
+    font-weight: 400;
+}
+
+.forgotPass{
+    font-weight: 500;
+    font-size: 14px;
+color: var(--green);
+} 
+
+.button{
+    width: 100%;
+}
+
+.button > input[type="button"]{
+    width: 100%;
+    height: 35px;
+    background: var(--button);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+footer{
+    width: 100%;
+    background: #000000;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+    font-family: "poppins";
+}
+
+footer a{
+    color: #288855;
+    font-weight: 800;
+}
+
+
+@media(max-width:750px){
+
+    body{
+        overflow-x: hidden;
+    }
+    .wrapper{
+        width: 100%;
+        display: grid;
+    }
+
+    .information{
+        width: 100%;
+    }
+
+    .Textheading{
+        font-size: 25px;
+        text-align: center;
+    }
+
+.loginForm{
+    width: 100%;
+}
+
+.formWrapper{
+    width: 100%;
+}
+
+footer{
+    font-size: 15px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
